@@ -64,7 +64,8 @@
         public function __construct(SessionService $sessionService) {
             $this->sessionService = $sessionService;
 
-            if ($this->cartExistsSession())
+            if ($this->cartExistsSession()) {
                 $this->cart = &$sessionService->getSessionValueReference(self::CART_SESSION_KEY);
+            }
         }
     }
