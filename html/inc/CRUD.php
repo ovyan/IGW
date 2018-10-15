@@ -31,13 +31,25 @@
          * @var PDO
          */
         private $db;
-
+        
+        /**
+         * @var string
+         */
         private $host;
 
+        /**
+         * @var string
+         */
         private $port;
 
+        /**
+         * @var string
+         */
         private $user;
 
+        /**
+         * @var string
+         */
         private $dbName;
 
         /**
